@@ -1,0 +1,19 @@
+<div class="container-fluid">
+    <div class="navbar navbar-dark bg-primary shadow-sm">
+        <div class="navbar-brand align-center d-flex">&nbsp;
+            <i class="bi bi-border-style">&nbsp;
+            </i>
+            <strong>Shoping-Site</strong>
+            <div class="form-group">
+                <input type="text" class="form-control" [(ngModel)]="searchTerm" (keyup)="search($event)"
+                    placeholder="Search">
+            </div>
+            <i class="bi bi-search search-icon"></i>
+        </div>
+        <div class="btn btn-primary" style="margin-left: 250px;">
+            <i class="bi bi-cart-fill" style="font-size: 30px;"></i>
+            <div class="badge bg-danger badge-count">{{cartItems}}</div>
+        </div>
+        <i class="bi bi-person-circle" style="font-size: 30px; color: #fff;"></i>
+    </div>
+</div>

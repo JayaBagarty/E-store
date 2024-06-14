@@ -1,0 +1,17 @@
+<div class="container m-2">
+    <div class="row product-detaiils">
+        <div class="col-sm-4">
+            <img [src]="Product.image" class="card-img-top" height="300">
+        </div>
+        <div class="col-sm-8">
+           <div>
+            <h1>{{Product.id}}</h1>
+            <p style="color:blue">{{Product.title}}</p>
+            <h3>Price: ${{Product.price}}</h3>
+            <strong style="color: red;">{{Product.category}}</strong><br>
+            <strong>{{Product.description}}</strong><br><br>
+            <div class="btn btn-primary" (click)="addToCart(Product)">AddToCart</div> 
+           </div>
+        </div>
+    </div>
+</div>
